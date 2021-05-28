@@ -219,6 +219,7 @@
                 </option>
                 <option>
                     <name>CCDefines</name>
+                    <state>STM32F10X_HD</state>
                     <state>USE_STDPERIPH_DRIVER</state>
                 </option>
                 <option>
@@ -280,7 +281,7 @@
                 <option>
                     <name>CCAllowList</name>
                     <version>1</version>
-                    <state>00000000</state>
+                    <state>11111110</state>
                 </option>
                 <option>
                     <name>CCDebugInfo</name>
@@ -365,7 +366,7 @@
                 </option>
                 <option>
                     <name>CCOptLevel</name>
-                    <state>1</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>CCOptStrategy</name>
@@ -374,7 +375,7 @@
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
-                    <state>1</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>CompilerMisraRules98</name>
@@ -764,7 +765,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\Application\Bsw\Startup\src\STM32F10x_FLASH.icf</state>
+                    <state>$PROJ_DIR$\Link\stm32f10x_flash.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -2165,7 +2166,13 @@
                 <group>
                     <name>src</name>
                     <file>
-                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\heap_2.c</name>
+                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\croutine.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\event_groups.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\heap_4.c</name>
                     </file>
                     <file>
                         <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\list.c</name>
@@ -2177,13 +2184,13 @@
                         <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\portasm.s</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\portmacro.h</name>
-                    </file>
-                    <file>
                         <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\queue.c</name>
                     </file>
                     <file>
                         <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\tasks.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\timers.c</name>
                     </file>
                 </group>
             </group>
@@ -2193,10 +2200,19 @@
             <group>
                 <name>src</name>
                 <file>
+                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\delay.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\main.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\system.c</name>
+                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\startup_stm32f10x_hd.s</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\stm32f10x_it.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\sys.c</name>
                 </file>
             </group>
         </group>
