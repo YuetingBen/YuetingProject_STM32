@@ -2492,7 +2492,13 @@
                 <group>
                     <name>src</name>
                     <file>
-                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\heap_2.c</name>
+                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\croutine.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\event_groups.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\heap_4.c</name>
                     </file>
                     <file>
                         <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\list.c</name>
@@ -2504,13 +2510,13 @@
                         <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\portasm.s</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\portmacro.h</name>
-                    </file>
-                    <file>
                         <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\queue.c</name>
                     </file>
                     <file>
                         <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\tasks.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\Application\Bsw\Services\Rtos\src\timers.c</name>
                     </file>
                 </group>
             </group>
@@ -2520,10 +2526,19 @@
             <group>
                 <name>src</name>
                 <file>
+                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\delay.c</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\main.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\system.c</name>
+                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\startup_stm32f10x_hd.s</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\stm32f10x_it.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Application\Bsw\Startup\src\sys.c</name>
                 </file>
             </group>
         </group>

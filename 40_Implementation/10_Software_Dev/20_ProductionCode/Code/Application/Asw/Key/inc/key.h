@@ -2,7 +2,7 @@
 #define _key_H
 
 
-#include "system.h"
+#include "sys.h"
  
 #define KEY_LEFT_Pin    GPIO_Pin_2    //定义K_LEFT管脚
 #define KEY_DOWN_Pin    GPIO_Pin_3    //定义K_DOWN管脚

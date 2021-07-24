@@ -1,7 +1,7 @@
 #ifndef _led_H
 #define _led_H
 
-#include "system.h"
+#include "sys.h"
 
 /*  LED时钟端口、引脚定义 */
 #define LED_PORT 			GPIOC   
