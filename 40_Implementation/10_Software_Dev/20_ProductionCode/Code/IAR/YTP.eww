@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspace>
     <project>
-        <path>$WS_DIR$\YTP_App.ewp</path>
+        <path>$WS_DIR$\App\YTP_App.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\Fbl\YTP_Fbl.ewp</path>
     </project>
     <batchBuild />
 </workspace>
